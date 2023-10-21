@@ -20,7 +20,7 @@ const HeroSection = () => {
         <Image
           src={dev}
           placeholder="blur"
-          alt="Iyan Saputra"
+          alt="Junior Cavicchioli"
           className="mx-auto object-cover rounded-3xl"
           width={400}
           loading="eager"

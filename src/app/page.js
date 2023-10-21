@@ -2,9 +2,12 @@
 import Menu from '@/components/Menu';
 import HeroSection from '@/components/HeroSection';
 import Footer from '@/components/Footer';
+import Image from 'next/image';
+
+import duxus from '@/img/duxus.png';
 
 const HomePage = () => {
-  const paragraph = 'mb-3 text-lg text-gray-400 ';
+  const paragraph = 'mb-3 text-lg text-justify text-gray-400 ';
   const h3 = 'text-xl font-bold dark:text-white pb-3.5 pt-5';
   return (
     <div>
@@ -30,13 +33,21 @@ const HomePage = () => {
         <div className='w-full'>
           <h3 className={h3}>Carreira</h3>
           <p className={paragraph}>
-            Atuo como desenvolvedor de software estagiário na Élin Duxus desde junho de 2023.
+            Atuo como desenvolvedor de software estagiário na <a href='https://www.linkedin.com/company/-lin-duxus-consulting/' target='_blank' className='text-blue-400 hover:text-blue-600 underline-offset-2 underline'>Élin Duxus</a> desde julho de 2023.
           </p>
+          <div className='flex'>
+            <p className={paragraph + ' w-3/4'}>
+              Contribuo com a evolução e manutenção dos sistemas da empresa. Grande parte do meu aprendizado é prático. Programo principalmente em Java, usando frameworks como Vraptor e Spring no back-end. Para o front-end, utilizo Javascript, HTML, CSS e o framework Vue.js. Também utilizo a tecnologia JSP (JavaServer Pages) para criar telas no lado do servidor.
+            </p>
+            <Image
+              src={duxus}
+              alt="Élin Duxus Logo"
+              className="mx-auto h-fit object-fill"
+              loading="eager"
+            />
+          </div>
           <p className={paragraph}>
-            Minha função é capacitar-me para desempenhar funções de níveis superiores. Grande parte do meu aprendizado é prático. Programo principalmente em Java, usando frameworks como Vraptor e Spring no back-end. Para o front-end, utilizo Javascript, HTML, CSS e o framework Vue.js. Também utilizo a tecnologia JSP (JavaServer Pages) para criar telas no lado do servidor.
-          </p>
-          <p className={paragraph}>
-            Até o momento, grande parte do meu trabalho envolveu a manutenção dos sistemas da empresa. Resolvi bugs identificados pela equipe, executei tarefas de investigação de problemas e também identifiquei e reportei bugs para que sejam resolvidos por mim ou por outros desenvolvedores. Também utilizei a biblioteca Selenium para coletar informações de sites a fim de alimentar o banco de dados do sistema. Tenho experiência no uso dos frameworks ágeis SCRUM e Kanban no dia a dia.
+            Estou terminando minha faculdade de análise e desenvolvimento de sistemas na <a href='https://www.fiap.com.br/graduacao/tecnologo/analise-e-desenvolvimento-de-sistemas/' target='_blank' className='text-blue-400 hover:text-blue-600 underline-offset-2 underline'>FIAP</a>.
           </p>
         </div>
 
